@@ -1,0 +1,10 @@
+<p>
+  test1 works!
+  {{data | json}}
+</p>
+  <ul *ngIf="data">
+    <li *ngFor="let item of data; let i = index">
+      {{i}} {{item.taskTitle}}
+    </li>
+  </ul>
+
